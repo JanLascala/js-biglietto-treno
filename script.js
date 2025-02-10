@@ -16,7 +16,7 @@ const kilometerSelect = prompt("select kilometers");
 console.log(kilometerSelect);
 
 const userAge = prompt("select age");
-console.log(userAge);;
+console.log(userAge);
 
 const standardPrice = tckprice * kilometerSelect
 console.log(standardPrice);
