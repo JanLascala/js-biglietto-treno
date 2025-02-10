@@ -6,7 +6,7 @@ console.log(name)
 /*bonus start*/
 
 
-const userchoice = prompt("choose even or odd [even, odd]");
+/*const userchoice = prompt("choose even or odd [even, odd]");
 console.log(userchoice);
 
 const userNumber = Number(prompt("select a number 1 to 9"))
@@ -40,7 +40,7 @@ if (sum % 2 !== 0 && userchoice == `odd`) {
 } else {
 
     alert(`you win`)
-}
+}*/
 
 
 
@@ -53,4 +53,17 @@ if (sum % 2 !== 0 && userchoice == `odd`) {
 /* I give up*/
 
 /* date time*/
+
+const hour = new Date();
+const minutes = new Date();
+const minute2 = 1000 * 60;
+const hour2 = minute2 * 60;
+
+document.getElementById("hour").innerHTML = hour.getHours()
+document.getElementById("minutes").innerHTML = minutes.getMinutes()
+
+const minutesTo = Math.round(Date.now() - minute2)
+document.getElementById("minutesTO").innerHTML = minutesTo
+
+
 
