@@ -8,29 +8,38 @@ per indicare centesimi sul prezzo).
 Questo richiederà un minimo di ricerca.*/
 
 /* choices standard price*/
-const tckprice = 0.21
+
+const tckprice = 0.21;
 
 
 const kilometerSelect = prompt("select kilometers");
-console.log(kilometerSelect)
+console.log(kilometerSelect);
 
-const userAge = prompt("select age")
-console.log(userAge)
+const userAge = prompt("select age");
+console.log(userAge);;
 
 const standardPrice = tckprice * kilometerSelect
-console.log(standardPrice)
+console.log(standardPrice);
 
 
 /* variables*/
 
 if (userAge < 18) {
 
-    const minorDiscount = (80 * standardPrice) / 100
-    console.log(minorDiscount)
+    const minorDiscount = (80 * standardPrice) / 100;
+    console.log(minorDiscount);
+    const minordecimal = minorDiscount.toFixed(2)
+
+    document.getElementById("minorDiscount").innerHTML = (minordecimal);
 
 } else if (userAge > 65) {
     const seniorDiscount = (60 * standardPrice) / 100
     console.log(seniorDiscount)
+    const seniordecimal = seniorDiscount.toFixed(2)
+
+    document.getElementById("seniorDiscount").innerHTML = (seniordecimal);
+
+
 }
 
 
