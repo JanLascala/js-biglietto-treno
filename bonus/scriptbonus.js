@@ -28,16 +28,29 @@ console.log(sum % 2 === 0)
 
 if (sum % 2 === 0 && userchoice == `even`) {
 
-    alert(`you win`)
+    alert(`you 1`)
 } else {
-    alert(`pc won`)
+    alert(`pc 1`)
 }
 
-if (sum % 2 === 0 && userchoice == `odd`) {
+if (sum % 2 !== 0 && userchoice == `odd`) {
 
-    alert(`you win`)
+    alert(`pc win`)
 
 } else {
 
-    alert(`pc won`)
+    alert(`you win`)
 }
+
+
+
+
+
+
+
+
+
+/* I give up*/
+
+/* date time*/
+
