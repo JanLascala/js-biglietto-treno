@@ -6,18 +6,18 @@ console.log(name)
 /*bonus start*/
 
 
-const userchoice = prompt("choose even or odd");
+const userchoice = prompt("choose even or odd [even, odd]");
 console.log(userchoice);
 
-const usernumber = Number(prompt("select a number"))
-console.log(usernumber);
+const userNumber = Number(prompt("select a number 1 to 9"))
+console.log(userNumber);
 
 
 const pcNumber = Math.floor(Math.random() * 9) + 1;
 console.log(pcNumber)
 
 
-const sum = usernumber + pcNumber
+const sum = userNumber + pcNumber
 console.log(sum)
 
 
@@ -26,7 +26,18 @@ console.log(sum % 2)
 console.log(sum % 2 === 0)
 
 
-if (sum % 2 === 0 && userchoice === `pari`) {
+if (sum % 2 === 0 && userchoice == `even`) {
 
-    al
+    alert(`you win`)
+} else {
+    alert(`pc won`)
+}
+
+if (sum % 2 === 0 && userchoice == `odd`) {
+
+    alert(`you win`)
+
+} else {
+
+    alert(`pc won`)
 }
