@@ -7,7 +7,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 per indicare centesimi sul prezzo). 
 Questo richiederà un minimo di ricerca.*/
 
-/* choices*/
+/* choices standard price*/
 const tckprice = 0.21
 
 
@@ -19,6 +19,20 @@ console.log(userAge)
 
 const standardPrice = tckprice * kilometerSelect
 console.log(standardPrice)
+
+
+/* variables*/
+
+if (userAge < 18) {
+
+    const minorDiscount = (80 * standardPrice) / 100
+    console.log(minorDiscount)
+
+} else if (userAge > 65) {
+    const seniorDiscount = (60 * standardPrice) / 100
+    console.log(seniorDiscount)
+}
+
 
 
 
